@@ -32,8 +32,10 @@
 .about_me .permsg ul{float:left; padding:11px 0 0 5px; width:327px;}
 .about_me .permsg .msglist li{margin-bottom:35px; height:14px;}
 .about_me .permsg p{font-size:14px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#000;}
-.about_me .permsg .p1{float:left; width:63px;}
+.about_me .permsg .p1{float:left; width:80px;}
 .about_me .permsg .p2{float:left;}
+.about_me .permsg .p2 a{color:#000;}
+.about_me .permsg .p2 a:hover{color:orange;}
 .about_me .permsg .skill{float:left; width:420px;}
 .about_me .permsg .skill h4{font-size:22px; color:#393b3a; font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
 .about_me .permsg .skill strong{color:#00cfbd;}

@@ -7,7 +7,6 @@
 <style>
 	*{padding:0; margin:0;}
 	li{list-style: none;}
-	input{width:100px; height:36px; background: green; text-align: center; line-height: 36px; border:none; outline: none; position:absolute; left:10px; top:10px; font-size:12px; color:#fff;} 
 	.clock{width:359px; height:82px; background:#ddd; position:absolute; left:50%; top:50%;
 		   margin-left:-215px; margin-top:-62px; padding:42px 0 0 71px; border-radius:20px;}
     ul{position:absolute; left:40px; top:10px; color:#666;}
@@ -23,14 +22,10 @@
 		return n<10?'0'+n:''+n;
 	}
 	window.onload=function(){
-		var oBtn=document.getElementById('btn');
 		var oClock=document.getElementById('clock');
 		var aImg=oClock.getElementsByTagName('img');
 		var aLi=oClock.getElementsByTagName('li');
 		var oStrong=oClock.getElementsByTagName('strong')[0];
-		oBtn.onclick=function(){
-			window.open('../../index.html','_self');
-		}
 		function clock(){
 			var oDate=new Date();
 			var h=oDate.getHours();
@@ -62,7 +57,6 @@
 </script>
 </head>
 <body>  
-<input type="button" id="btn" value="返回首页" /> 
 	<div class="clock" id="clock">
 		<ul>	
 			<li>星期一</li>

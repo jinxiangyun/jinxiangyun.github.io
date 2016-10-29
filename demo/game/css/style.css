@@ -2,7 +2,6 @@
 /* CSS Document */
 *{padding:0;margin:0;}
 li{list-style:none;}
-#btn{position:absolute; left:10px; top:10px; width:120px; height:36px; text-align:center; line-height:36px; background:pink; text-decoration:none; color:#fff;}
 #game{width:710px;height:587px;border:1px solid #ccc;margin:50px auto;padding:11px 14px 0 14px;}
 #game .title{height:35px;border-bottom:3px solid #ff7a01;overflow:hidden;}
 #game h4{font-size:17px;color:#000;height:21px;padding:5px 0 0 35px;background:url(img/logo.png) no-repeat;float:left;}
