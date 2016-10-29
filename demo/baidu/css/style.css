@@ -1,0 +1,8 @@
+*{padding:0; margin:0;}
+li{list-style: none;}	
+h1{width:240px; height: 115px; background: url(../img/bd_logo.png) no-repeat; margin:0 auto; text-indent:-9999em; background-size:100%;}
+input{width:544px; height:38px; text-indent: 1em; line-height: 38px; outline: none; display:block; margin:0 auto; }
+ul{width:526px; border:1px solid #ccc; border-top:none; margin:0 auto; padding:0 10px; display: none;}
+ul li{height:26px; border-bottom:1px dashed #ccc; line-height: 26px;}
+ul li:last-child{border-bottom:none;}
+li.on{background: #f2f2f2;}
