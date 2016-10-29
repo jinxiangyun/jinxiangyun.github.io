@@ -1,0 +1,18 @@
+*{padding:0; margin:0;}
+body{background: #2b292b;}
+img{vertical-align:top;}
+li{list-style: none; float: left;}
+a{text-decoration: none; color:#fff;}
+/*低版本浏览器border-radius、box-shadow不支持*/
+.headerwrap{width:100%; height:36px; background:#201f20;}
+.header{width:1000px; margin:0 auto; line-height: 38px;  color:#fff; font-weight:bold;}
+.header li{width:100px; text-align: center;}
+.header h1{font-size:12px;}
+.header a{display: block; font-size:12px;}
+.pic{position:absolute; width:200px; height:260px; padding:3px; background: #fff; border-radius:6px;}
+.pic img{width:200px; height:260px; box-shadow:0px 0px 5px orange; cursor: pointer;}
+.pic1{left:280px; top:170px;z-index: 1;}
+.pic2{left:420px; top:210px; z-index: 2;}
+.pic3{left:570px; top:260px; z-index: 3;}
+.pic4{left: 720px; top:210px; z-index: 2;}
+.pic5{left:860px; top:170px; z-index: 1;}
