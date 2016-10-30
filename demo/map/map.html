@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>地图API</title>
+    <style>
+        html, body, #map-canvas {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+    </style>
+    <script src="http://api.map.so.com/js?key=189a838ed8c0a5aad30c"></script>
+    <script>
+        function initialize() {
+            var mapOptions = {
+                zoom: 14,
+                center: new so.maps.LatLng(39.912896,116.397003),
+                disableDefaultUI: true,
+                mapTypeId: so.maps.MapTypeId.ROADMAP
+            };
+            var map = new so.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            var mayLatLng = new so.maps.LatLng(39.906247,116.397558);
+            var marker = new so.maps.Marker({
+                position: mayLatLng,
+                map: map
+            });
+        }
+    </script>
+</head>
+<body onload="initialize()">
+<div id="map-canvas"></div>
+</body>
+</html>
