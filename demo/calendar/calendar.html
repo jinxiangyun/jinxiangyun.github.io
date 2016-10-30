@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="" rel="stylesheet" />
+<style>
+	*{padding:0; margin:0; list-style: none;}
+	#box{width:420px; height:450px; border:1px solid #ccc; margin:50px auto; position: relative; padding:20px;}
+	h4{text-align: center; height:30px; line-height: 30px; color:#4cccc4;}
+	a{text-decoration: none; color:#4cccc4; font-weight: bold;}
+	#prev{width:30px; height:30px; position: absolute; left:170px; top:18px;  line-height:30px;}
+	#next{width:30px; height:30px; position: absolute; left:279px; top:18px;  line-height:30px;}
+	ol{overflow: hidden; width:420px; margin:0 auto; border-bottom:2px solid #4cccc4;}
+	ol li{float:left; width:60px; text-align: center;  margin:10px auto; color:#4cccc4; font-weight:bold;} 
+	ul{overflow: hidden; width:420px; margin:0 auto;}
+	ul li{float:left; width:60px; height:60px; text-align: center; line-height: 60px; font-weight: bold;}
+</style>
+<script>
+	function toDou(n){
+		return n<10?'0'+n:''+n;
+	}
+	function rnd(n,m){
+		return parseInt(Math.random()*(m-n)+n);
+	}
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var oPrev=document.getElementById('prev');
+		var oNext=document.getElementById('next');
+		var oH4=oBox.children[0];
+		var oUl=oBox.children[4];
+		var now=0;
+		//本月一号
+		function createDateList(){
+			var oDate=new Date();
+			oDate.setMonth(oDate.getMonth()+now);
+			var Y=oDate.getFullYear();
+			var M=oDate.getMonth()+1;
+			oH4.innerHTML=Y+'年'+toDou(M)+'月';
+			oUl.innerHTML='';
+			var oDate=new Date();
+			oDate.setMonth(oDate.getMonth()+now);
+			oDate.setDate(1);
+			var week=oDate.getDay();
+			if(week==0){week=7;}
+			for(var i=0; i<week; i++){
+				var oLi=document.createElement('li');
+				oUl.appendChild(oLi);
+			}
+			//获取本月多少天
+			var oDate=new Date();
+			oDate.setMonth(oDate.getMonth()+now+1);
+			oDate.setDate(0);
+			var n=oDate.getDate();
+			for(var i=1 ; i<n+1; i++){
+				var oLi=document.createElement('li');
+				oLi.innerHTML=i;
+				oUl.appendChild(oLi);
+			}
+			var aLi=oUl.children;
+			for(var i=0; i<aLi.length;i++){
+				if(i%7==0||i%7==6){
+					aLi[i].className='week';
+					aLi[i].style.color='red';
+					
+				}
+			}
+			if(now==0){
+				var oDate=new Date();
+				var today=oDate.getDate();
+				for(var i=0; i<aLi.length; i++){
+					if(aLi[i].innerHTML==today){
+						//aLi[i].style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
+						aLi[i].style.background='#4cccc4';
+					}else if(aLi[i].innerHTML<today){
+						aLi[i].style.color='#ccc';
+						
+
+					}
+				}
+			}else if(now<0){
+				for(var i=0; i<aLi.length; i++){
+					aLi[i].style.color='#ccc';
+					
+				}
+			}
+		};
+		createDateList();
+		oPrev.onclick=function(){
+		 	now--;
+		 	 createDateList();
+		}
+		oNext.onclick=function(){
+		 	now++;
+			createDateList();
+		}
+		//节日的数组
+		var oMore=document.getElementById('more');
+		oMore.onclick=function(){
+			var oMsg=document.createElement('div');
+			document.body.appendChild(oMsg);
+		}
+	}
+</script>
+</head>
+<body>  
+	<div id="box">
+		<h4></h4>
+		<a href="javascript:;" id="prev">&lt;</a>
+		<a href="javascript:;" id="next">&gt;</a>
+		<ol>
+			<li>星期日</li>
+			<li>星期一</li>
+			<li>星期二</li>
+			<li>星期三</li>
+			<li>星期四</li>
+			<li>星期五</li>
+			<li>星期六</li>
+		</ol>
+		<ul>		
+		</ul>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,14 @@
+/*清除浏览器默认样式*/
+/*css stylesheet start*/
+*{padding:0; margin:0;}
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+a{text-decoration:none; color:#ccc;}
+i,em{font-style:normal;}
+b,strong{font-style:normal;}
+li{list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{display:block; content:''; clear:both;}
+.clearfix{zoom:1;}
+img{vertical-align:top;}/*图像3像素bug*/
+/*css stylesheet end*/
