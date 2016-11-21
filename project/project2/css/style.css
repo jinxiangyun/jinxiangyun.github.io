@@ -1,0 +1,197 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+/*header*/
+.headerwrap {
+	width: 100%;
+	height: 95px;
+	background: #1b0a0a;
+}
+
+.header {
+	width: 1001px;
+	margin: 0 auto;
+}
+.search {
+	height:36px;
+	overflow:hidden;
+} 
+
+.search a{
+	float:right;
+	font-size:12px;
+	color:#fff;
+	margin-top:16px;
+}
+.search .login{
+	padding-right:10px;
+	line-height: 15px;
+	border-right:2px solid #fff;
+	margin-right:11px;
+}
+.search .area{
+	width:183px; 
+	height:24px;
+	background: #fff;
+	margin-left: 9px;
+	float: right;
+	margin-top:10px;
+	overflow: hidden;
+}
+.search .text{
+	width:162px;
+	height:24px;
+	border:none;
+	outline:none;
+	float:left;
+}
+
+.search .btn{
+	background: url(../img/search.png) no-repeat;
+	width:21px;
+	height:24px;
+	border:none;
+	outline: none;
+	cursor:pointer;
+}
+.header .navwrap {
+	width: 1001px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header .navwrap ul {
+	float: right;
+	margin-right: -41px;
+}
+
+.header .navwrap li {
+	margin-right: 41px;
+	float: left;
+	font-size: 15px;
+	line-height: 58px;
+}
+
+/*content*/
+.content {
+	width: 1001px;
+	margin: 0 auto;
+}
+
+.content h2 {
+	font-size: 18px;
+	color: #212121;
+	padding: 31px 0 18px 20px;
+}
+
+.con_1 {
+	overflow: hidden;
+}
+
+.con_1 img {
+	float: left;
+	margin-right: 22px;
+}
+
+.con_1 .center {
+	width: 235px;
+	height: 360px;
+	float: right;
+}
+
+.con_1 .center h3 {
+	font-size: 22px;
+	font-family: '微软雅黑';
+	font-weight: normal;
+	color: #212121;
+	text-align: center;
+	line-height: 100px;
+	height: 100px;
+	background: #e9205b;
+}
+
+.con_1 .center dl {
+	padding: 15px 0 0 14px;
+}
+
+.con_1 .center dt {
+	font-size: 17px;
+	color: #212121;
+	line-height: 41px;
+}
+
+.con_1 .center dd {
+	font-size: 14px;
+	color: #212121;
+	line-height: 34px;
+}
+
+.con_2 {
+	width: 1001px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 119px;
+}
+
+.con_2 ul {
+	margin-right: -21px;
+}
+
+.con_2 li {
+	float: left;
+	margin-right: 20px;
+	height: 390px;
+}
+.con_2 li a{
+	display: block;
+}
+.con_2 p {
+	overflow: hidden;
+	padding: 20px 0 0 21px;
+	font-size: 13px;
+	color: #000;
+}
+
+.con_2 span {
+	margin-left: 89px;
+	float: right;
+}
+
+.con_2 b {
+	color: #e60044;
+	margin-right: 8px;
+}
+
+.con_2 strong {
+	color: #e60044;
+	margin: 0 6px;
+}
+
+/*footer*/
+.footerwrap {
+	width: 100%;
+	height: 58px;
+	line-height: 58px;
+	background: #000000;
+}
+
+.footer {
+	width: 1001px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 11px;
+	color: #fff;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript">
+		window.onload=function(){
+			(function(){
+				var oNav=document.getElementById('nav');
+				var aLi=oNav.getElementsByTagName('li');
+				for(var i=0; i<aLi.length; i++){
+					aLi[i].onclick=function(){
+						for(var j=0; j<aLi.length; j++){
+							aLi[j].className='';
+						}
+						this.className='active';
+					}
+				}
+			})();
+			var oArea=document.getElementById('area');
+			var aDd=oArea.getElementsByTagName('dd');
+			var aDiv=oArea.getElementsByTagName('div');
+			for(var i=0; i<aDd.length; i++){
+				(function(index){
+					aDd[i].onclick=function(){
+						for(var j=0; j<aDd.length; j++){
+							aDd[j].className='';
+							aDiv[j].style.display='none';
+						}
+						this.className='on';
+						aDiv[index].style.display='block';
+					}
+				})(i)
+			}		
+		}
+	</script>
+</head>
+<body>
+	<div class="headerwrap">
+		<div class="header">
+			<h1></h1>
+			<div class="name">
+				<p class="ch">德尔庆管业</p>
+				<p class="en">DEERQING PLASTICS</p>
+			</div>
+			<p class="hotline">热线电话:<span>0533-7521189</span></p>	
+		</div>
+	</div>
+	<div class="navwrap">
+		<ul class="nav" id="nav">
+			<li><a href="javascript:;">网站首页</li>
+			<li><a href="javascript:;">关于我们</li>
+			<li class="active"><a href="javascript:;">企业文化</li>
+			<li><a href="javascript:;">新闻中心</li>
+			<li><a href="javascript:;">产品展示</li>
+			<li><a href="javascript:;">技术支持</li>
+			<li><a href="javascript:;">加入我们</li>
+			<li><a href="javascript:;">联系我们</li>
+		</ul>
+	</div>
+	<div class="content">
+		<img src="img/bg.png" alt="">
+		<div class="area" id="area">
+				<span class="pic"></span>
+				<dl class="intro">
+					<dt>企业文化</dt>
+					<dd class="on"><a href="javascript:;">企业文化</a></dd>
+					<dd><a href="javascript:;">员工风采</a></dd>
+				</dl>
+				<div style="display: block;">
+					<h2>
+						<p class="tit">企业文化</p>
+						<p class="pos">您现在的位置：首页 > 企业文化> 企业文化</p>
+					</h2>
+					<p>淄博德尔庆塑料制品有限公司位于中石化齐鲁石化氯碱厂南侧，北距济青高速公路十公里，交通十分便利。</p>
+     				<p>淄博德尔庆塑料制品有限公司是一家集开发、生产、销售、服务为一体的专业生产、经营塑料管材企业，公司现有职工100余人，其中技术人员15人，专业功底扎实，技术力量雄厚。</p>
+    				<p>公司现有生产设备10余条及完备的检测设备，年产塑料管材5000余吨。其主要产品为φ20~φ630，煤矿井下用聚氯乙烯管和煤矿井下用聚乙烯管。</p>
+     				<p>公司奉行质量第一、客户至上的经营宗旨，从原料进厂至产品出厂全过程严格按质量标准控制，产品经省、部、国家级检验部门检测完全达到标准要求.</p>
+					<p>我公司将以认真的精神及时为广大用户提供良好的产品和完善的服务，并愿和各界朋友同心合作、共创辉煌！</p>
+    				<p>面向未来，我们坚持以打造百年基业为目标，加快推进“高度专业化，适度多元化” 发展战略，以归零心态，高效推动打造核心竞争力战略、人才强企战略和信息化战略，致力于实现员工成长、客户满意、企业发展、社会进步的多赢，领创无限价值，释放无限梦想，成就无限可能。</p>
+				</div>
+				<div>
+					<h2>
+						<p class="tit">企业文化</p>
+						<p class="pos">您现在的位置：首页 > 企业文化> 员工风采</p>
+					</h2>
+						<ul>
+							<li>
+								<img src="img/pic1.jpg">
+							</li>
+							<li>
+								<img src="img/pic2.jpg" alt="">
+							</li>
+							<li>
+								<img src="img/pic3.jpg" alt="">
+							</li>
+							<li>
+								<img src="img/pic4.jpg" alt="">
+							</li>
+							<li>
+								<img src="img/pic5.jpg" alt="">
+							</li>
+							<li>
+								<img src="img/pic6.jpg" alt="">
+							</li>
+						</ul>
+					</h2>
+				</div>
+		</div>
+	</div>
+	<div class="footerwrap">
+		<ul class="footer">
+			<li><a href="javascript:;">关于我们</a></li>
+			<li><a href="javascript:;">公司简介</a></li>
+			<li><a href="javascript:;">新闻中心</a></li>
+			<li><a href="javascript:;">产品展示</a></li>
+			<li><a href="javascript:;">行业应用</a></li>
+			<li><a href="javascript:;">技术支持</a></li>
+			<li><a href="javascript:;">加入我们</a></li>
+			<li><a href="javascript:;"  class="last">联系我们</a></li>
+		</ul>
+		<p>版权所有： CopyRight @ 2012 淄博德尔庆塑料制品有限公司 版权所有 All Right Reserved</p>
+	</div>
+</body>
+</html>
